@@ -8,7 +8,6 @@ public class ArrayListEx1 {
 
 		
 		ArrayList list1 = new ArrayList(10);
-		
 		list1.add(new Integer(5));
 		list1.add(new Integer(4));
 		list1.add(new Integer(2));
