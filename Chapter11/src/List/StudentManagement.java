@@ -56,19 +56,18 @@ System.out.println("***********************");
 		try {
 		 input = s.nextLine();
 		 
-		 
-		 StringTokenizer st = new StringTokenizer(input); 
-		 String name = st.nextToken();
-		 int ban = Integer.parseInt(st.nextToken());
-		 int no = Integer.parseInt(st.nextToken());
-		 int kor = Integer.parseInt(st.nextToken());
-		 int eng = Integer.parseInt(st.nextToken());
-		 int math = Integer.parseInt(st.nextToken());
-		 record.add(new Student(name,ban,no,kor,eng,math));
 		}catch(Exception e) {
 			System.out.println("입력 오류입니다. 다시 입력하세요");
 			System.out.println("메인 메뉴로 돌아가려면 q를 입력하세요.");
 		}//try-catch
+		StringTokenizer st = new StringTokenizer(input); 
+		String name = st.nextToken();
+		int ban = Integer.parseInt(st.nextToken());
+		int no = Integer.parseInt(st.nextToken());
+		int kor = Integer.parseInt(st.nextToken());
+		int eng = Integer.parseInt(st.nextToken());
+		int math = Integer.parseInt(st.nextToken());
+		record.add(new Student(name,ban,no,kor,eng,math));
 		if(s.nextLine().equalsIgnoreCase("q")) {  break;}
 
 			
